@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 			fprintf(stderr, "[ERROR]: rcv msg error, [%d][%s]\n", errno, strerror(errno));
 			continue;
 		}
-		fprintf(stdout, "msg[%s]\n", buf.data);
+		fprintf(stdout, "[MESSAGE]: [%s]\n", buf.data);
 		strcat(buf.data, PREFIX);
 
 		ret = msgsnd(out_msgid, &buf, sizeof(buf.data), IPC_NOWAIT);

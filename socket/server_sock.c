@@ -110,22 +110,35 @@ int active_client_socket(int *client_socket)
 	return connect(*client_socket, (struct sockaddr *)&server, sizeof(server));
 }
 
-int add_client(fd_set *wset, int *maxfd, int *csocket)
+int add_client(fd_set *wset, fd_set *rset, int *maxfd, int *csocket)
 {
-	int client_socket;
+	int client_socket = 0;
+	//int flag;
 	int ret;
 
 	ret = active_client_socket(&client_socket);
 	if (ret) {
-		return -1;
-	}
-	client_status = 1;
-		FD_SET(client_socket, wset);
+		switch (errno) {
+		case EINPROGRESS:
+			client_status = 2; //CONNECTING
+
+			FD_SET(client_socket, wset);
+			if (client_socket > *maxfd)
+				*maxfd = client_socket;
+
+			*csocket = client_socket;
+		default:
+			close(client_socket);
+		}
+	} else {
+		client_status = 1;
+		FD_SET(client_socket, rset);
 		if (client_socket > *maxfd)
 			*maxfd = client_socket;
 
 		*csocket = client_socket;
-		return 0;
+	}
+	return 0;
 }
 
 int create_msgq(int *in_msgid, int *out_msgid)
@@ -134,7 +147,6 @@ int create_msgq(int *in_msgid, int *out_msgid)
 	key_t in_key;
 
 	if ((out_key = ftok(IN_PATH, 0)) < 0 || (in_key = ftok(OUT_PATH, 0)) < 0) {
-		fprintf(stderr, "[ERROR]: get msgqid error");
 		return -1;
 	}
 
@@ -180,7 +192,7 @@ int main(int argc, char *argv[])
 {
 	int lock_fd, maxfd = -1;
 	int ret, flag;
-	int pid;
+	int pid, len;
 	int in_msgqid, out_msgqid;
 	int sock_to_service[2], service_to_sock[2];
 	fd_set rset, wset, rs, ws;
@@ -188,6 +200,8 @@ int main(int argc, char *argv[])
 	msgbuf msg_buf;
 	int select_times, send_idle_times;
 	int client_socket, server_socket, new_server_socket;
+
+	len = 0;
 
 	if (argc != 2) {
 		fprintf(stderr, "[ERROR]: parameter error\n");
@@ -233,6 +247,7 @@ int main(int argc, char *argv[])
 				fprintf(stderr, "[ERROR]: snd msg error. [%d][%s]\n", errno, strerror(errno));
 			}
 		}
+        exit(0);
 	}
 
 	if (pipe(service_to_sock) == -1) {
@@ -266,6 +281,7 @@ int main(int argc, char *argv[])
 				fprintf(stderr, "[ERROR]: snd buf to pipe error. [%d][%s]\n", errno, strerror(errno));
 			}
 		}
+        exit(0);
 	}
 
 	/*
@@ -276,10 +292,12 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "[ERROR]: Add server error\n");
 		return -1;
 	}
-	ret = add_client(&wset, &maxfd, &client_socket);
+
+	ret = add_client(&wset, &rset, &maxfd, &client_socket);
 	if (ret) {
-		fprintf(stderr, "[ERROR]: Create client error\n");
+		fprintf(stderr, "[ERROR]: Add client error\n");
 	}
+
 
 	select_times = 0;
 	send_idle_times = 0;
@@ -292,15 +310,27 @@ int main(int argc, char *argv[])
 		rs = rset;
 		ws = wset;
 		ret = select(maxfd + 1, &rs, &ws, NULL, &time_out);
+		fprintf(stdout, "[MESSAGE]: [%d][%d][%s]\n", ret, errno, strerror(errno));
 		if (ret < 0 && errno != EINTR)
 			continue;
 
 		if (0 == client_status) {
-			ret = add_client(&wset, &maxfd, &client_socket);
+			ret = add_client(&wset, &rset, &maxfd, &client_socket);
 			if (ret) {
-				fprintf(stderr, "[ERROR]: Create client error\n");
-			} else
+				fprintf(stderr, "[ERROR]: Create client error. [%d][%s]\n", errno, strerror(errno));
+			} else {
+				FD_SET(client_socket, &rset);
+				FD_CLR(client_socket, &wset);
 				client_status = 1;
+			}
+		} else if (2 == client_status) {
+			if (getsockopt(client_socket, SOL_SOCKET, SO_ERROR, &ret, (socklen_t *)&len) < 0) {
+				fprintf(stderr, "[ERROR]: get socket option error\n");
+				close(client_socket);
+				continue;
+			}
+		} else {
+			FD_CLR(client_socket,&wset);
 		}
 
 		if (0 == ret)
@@ -314,7 +344,7 @@ int main(int argc, char *argv[])
 				fprintf(stderr, "[ERROR]: read from service_to_sock error\n");  
 			} else {
 				if (0 == client_status) {
-					ret = add_client(&wset, &maxfd, &client_socket);
+					ret = add_client(&wset, &rset, &maxfd, &client_socket);
 					if (ret) {
 						fprintf(stderr, "[ERROR]: Create client error\n");
 					} else 
@@ -330,7 +360,7 @@ int main(int argc, char *argv[])
 
 		if (FD_ISSET(server_socket, &rs)) {
 			if (0 == server_status) {
-				if (check_ip_and_accept(server_socket, &rs, &maxfd, &new_server_socket) < 0)
+				if (check_ip_and_accept(server_socket, &rset, &maxfd, &new_server_socket) < 0)
 					fprintf(stderr, "[ERROR]: invalued ip access, deny\n");
 			} else 
 				server_status = 1;
