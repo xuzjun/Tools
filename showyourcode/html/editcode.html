@@ -1,0 +1,822 @@
+<html lang="en" xmlns:wb="http://open.weibo.com/wb"><head><script async="" src="https://ptcms.csdn.net/comment/js/componet.js?_=1438608793214"></script><script async="" src="https://ptcms.csdn.net/comment/js/toolkit.js?_=1438608793213"></script><script async="" src="https://c.csdnimg.cn/public/common/tag-suggest-pop/js/main.js?11988406&amp;_=1438608793212"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>
+snippets/new | 
+CODE
+</title>
+<link href="//csdnimg.cn/public/favicon-b.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+<script async="" src="//www.google-analytics.com/analytics.js"></script><script src="//csdnimg.cn/pubfooter/js/tracking.js?4795362"></script>
+<link href="/assets/base-a29a38fceeed1116524469aa64785b8f.css" media="screen" rel="stylesheet" type="text/css">
+<link href="//csdnimg.cn/public/common/toolbar/css/index.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/assets/code-4957a63c0636112dde6d61e0969dc76c.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/assets/feature_groups/userprofile-ba4455e620f7bceae297994ad43c87ec.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/assets/feature_groups/snippet-e47026a1106c723dd1590fa410e5b0b4.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/assets/function/highlight/white-e080bf9eaf42615f0e02caea95bdbc9c.css" media="screen" rel="stylesheet" type="text/css">
+
+<script src="/assets/application-289f274928a42c4822a22eadecb690d1.js" type="text/javascript"></script>
+<script src="https://code.csdn.net/open/api/js/wb.js"></script>
+<script src="/assets/code_edit-a89b550ed8cf4c2effb422ea4b1ba216.js" type="text/javascript"></script><style id="ace_editor">.ace_editor {position: relative;overflow: hidden;font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;font-size: 12px;line-height: normal;color: black;}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;}.ace_content {position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;cursor: text;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QUM2OEZDQTQ4RTU0MTFFMUEzM0VFRTM2RUY1M0RBMjYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QUM2OEZDQTU4RTU0MTFFMUEzM0VFRTM2RUY1M0RBMjYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBQzY4RkNBMjhFNTQxMUUxQTMzRUVFMzZFRjUzREEyNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBQzY4RkNBMzhFNTQxMUUxQTMzRUVFMzZFRjUzREEyNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PkgXxbAAAAJbSURBVHjapFNNaBNBFH4zs5vdZLP5sQmNpT82QY209heh1ioWisaDRcSKF0WKJ0GQnrzrxasHsR6EnlrwD0TagxJabaVEpFYxLWlLSS822tr87m66ccfd2GKyVhA6MMybgfe97/vmPUQphd0sZjto9XIn9OOsvlu2nkqRzVU+6vvlzPf8W6bk8dxQ0NPbxAALgCgg2JkaQuhzQau/El0zbmUA7U0Es8v2CiYmKQJHGO1QICCLoqilMhkmurDAyapKgqItezi/USRdJqEYY4D5jCy03ht2yMkkvL91jTTX10qzyyu2hruPRN7jgbH+EOsXcMLgYiThEgAMhABW85oqy1DXdRIdvP1AHJ2acQXvDIrVHcdQNrEKNYSVMSZGMjEzIIAwDXIo+6G/FxcGnzkC3T2oMhLjre49sBB+RRcHLqdafK6sYdE/GGBwU1VpFNj0aN8pJbe+BkZyevUrvLl6Xmm0W9IuTc0DxrDNAJd5oEvI/KRsNC3bQyNjPO9yQ1YHcfj2QvfQc/5TUhJTBc2iM0U7AWDQtc1nJHvD/cfO2s7jaGkiTEfa/Ep8coLu7zmNmh8+dc5lZDuUeFAGUNA/OY6JVaypQ0vjr7XYjUvJM37vt+j1vuTK5DgVfVUoTjVe+y3/LxMxY2GgU+CSLy4cpfsYorRXuXIOi0Vt40h67uZFTdIo6nLaZcwUJWAzwNS0tBnqqKzQDnjdG/iPyZxo46HaKUpbvYkj8qYRTZsBhge+JHhZyh0x9b95JqjVJkT084kZIPwu/mPWqPgfQ5jXh2+92Ay7HedfAgwA6KDWafb4w3cAAAAASUVORK5CYII=");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QUM2OEZDQTg4RTU0MTFFMUEzM0VFRTM2RUY1M0RBMjYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QUM2OEZDQTk4RTU0MTFFMUEzM0VFRTM2RUY1M0RBMjYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBQzY4RkNBNjhFNTQxMUUxQTMzRUVFMzZFRjUzREEyNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBQzY4RkNBNzhFNTQxMUUxQTMzRUVFMzZFRjUzREEyNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pgd7PfIAAAGmSURBVHjaYvr//z8DJZiJgUIANoCRkREb9gLiSVAaQx4OQM7AAkwd7XU2/v++/rOttdYGEB9dASEvOMydGKfH8Gv/p4XTkvRBfLxeQAP+1cUhXopyvzhP7P/IoSj7g7Mw09cNKO6J1QQ0L4gICPIv/veg/8W+JdFvQNLHVsW9/nmn9zk7B+cCkDwhL7gt6knSZnx9/LuCEOcvkIAMP+cvto9nfqyZmmUAksfnBUtbM60gX/3/kgyv3/xSFOL5DZT+L8vP+Yfh5cvfPvp/xUHyQHXGyAYwgpwBjZYFT3Y1OEl/OfCH4ffv3wzc4iwMvNIsDJ+f/mH4+vIPAxsb631WW0Yln6ZpQLXdMK/DXGDflh+sIv37EivD5x//Gb7+YWT4y86sl7BCCkSD+Z++/1dkvsFRl+HnD1Rvje4F8whjMXmGj58YGf5zsDMwcnAwfPvKcml62DsQDeaDxN+/Y0qwlpEHqrdB94IRNIDUgfgfKJChGK4OikEW3gTiXUB950ASLFAF54AC94A0G9QAfOnmF9DCDzABFqS08IHYDIScdijOjQABBgC+/9awBH96jwAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/gif;base64,R0lGODlhEAAQAMQAAAAAAEFBQVJSUl5eXmRkZGtra39/f4WFhYmJiZGRkaampry8vMPDw8zMzNXV1dzc3OTk5Orq6vDw8P///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABQALAAAAAAQABAAAAUuICWOZGmeaBml5XGwFCQSBGyXRSAwtqQIiRuiwIM5BoYVbEFIyGCQoeJGrVptIQA7");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGRTk5MTVGREIxNDkxMUUxOTc5Q0FFREQyMTNGMjBFQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGRTk5MTVGRUIxNDkxMUUxOTc5Q0FFREQyMTNGMjBFQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZFOTkxNUZCQjE0OTExRTE5NzlDQUVERDIxM0YyMEVDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkZFOTkxNUZDQjE0OTExRTE5NzlDQUVERDIxM0YyMEVDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+SIDkjAAAAJ1JREFUeNpi/P//PwMlgImBQkB7A6qrq/+DMC55FkIGKCoq4pVnpFkgTp069f/+/fv/r1u37r+tre1/kg0A+ptn9uzZYLaRkRHpLvjw4cNXWVlZhufPnzOcO3eOdAO0tbVPAjHDmzdvGA4fPsxIsgGSkpJmv379Ynj37h2DjIyMCMkG3LhxQ/T27dsMampqDHZ2dq/pH41DxwCAAAMAFdc68dUsFZgAAAAASUVORK5CYII=");}.ace_scrollbar {position: absolute;overflow-x: hidden;overflow-y: auto;right: 0;top: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-h {position: absolute;overflow-x: auto;overflow-y: hidden;right: 0;left: 0;bottom: 0;z-index: 6;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;}.ace_text-input.ace_composition {background: #f8f8f8;color: #111;z-index: 1000;opacity: 1;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;white-space: nowrap;height: 100%;width: 100%;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;/* setting pointer-events: auto; on node under the mouse, which changesduring scroll, will break mouse wheel scrolling in Safari */pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;}.ace_text-layer {font: inherit !important;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {-moz-transition: opacity 0.18s;-webkit-transition: opacity 0.18s;-o-transition: opacity 0.18s;-ms-transition: opacity 0.18s;transition: opacity 0.18s;}.ace_cursor[style*="opacity: 0"]{-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}.ace_editor.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_line {white-space: nowrap;}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}.ace_line .ace_fold {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%11%00%00%00%09%08%06%00%00%00%D4%E8%C7%0C%00%00%03%1EiCCPICC%20Profile%00%00x%01%85T%DFk%D3P%14%FE%DAe%9D%B0%E1%8B%3Ag%11%09%3Eh%91ndStC%9C%B6kW%BA%CDZ%EA6%B7!H%9B%A6m%5C%9A%C6%24%ED~%B0%07%D9%8Bo%3A%C5w%F1%07%3E%F9%07%0C%D9%83o%7B%92%0D%C6%14a%F8%AC%88%22L%F6%22%B3%9E%9B4M'S%03%B9%F7%BB%DF%F9%EE9'%E7%E4%5E%A0%F9qZ%D3%14%2F%0F%14USO%C5%C2%FC%C4%E4%14%DF%F2%01%5E%1CC%2B%FChM%8B%86%16J%26G%40%0F%D3%B2y%EF%B3%F3%0E%1E%C6lt%EEo%DF%AB%FEc%D5%9A%95%0C%11%F0%1C%20%BE%945%C4%22%E1Y%A0i%5C%D4t%13%E0%D6%89%EF%9D15%C2%CDLsX%A7%04%09%1Fg8oc%81%E1%8C%8D%23%96f45%40%9A%09%C2%07%C5B%3AK%B8%408%98i%E0%F3%0D%D8%CE%81%14%E4'%26%A9%92.%8B%3C%ABER%2F%E5dE%B2%0C%F6%F0%1Fs%83%F2_%B0%A8%94%E9%9B%AD%E7%10%8Dm%9A%19N%D1%7C%8A%DE%1F9%7Dp%8C%E6%00%D5%C1%3F_%18%BDA%B8%9DpX6%E3%A35~B%CD%24%AE%11%26%BD%E7%EEti%98%EDe%9A%97Y)%12%25%1C%24%BCbT%AE3li%E6%0B%03%89%9A%E6%D3%ED%F4P%92%B0%9F4%BF43Y%F3%E3%EDP%95%04%EB1%C5%F5%F6KF%F4%BA%BD%D7%DB%91%93%07%E35%3E%A7)%D6%7F%40%FE%BD%F7%F5r%8A%E5y%92%F0%EB%B4%1E%8D%D5%F4%5B%92%3AV%DB%DB%E4%CD%A6%23%C3%C4wQ%3F%03HB%82%8E%1Cd(%E0%91B%0Ca%9Ac%C4%AA%F8L%16%19%22J%A4%D2itTy%B28%D6%3B(%93%96%ED%1CGx%C9_%0E%B8%5E%16%F5%5B%B2%B8%F6%E0%FB%9E%DD%25%D7%8E%BC%15%85%C5%B7%A3%D8Q%ED%B5%81%E9%BA%B2%13%9A%1B%7Fua%A5%A3n%E17%B9%E5%9B%1Bm%AB%0B%08Q%FE%8A%E5%B1H%5Ee%CAO%82Q%D7u6%E6%90S%97%FCu%0B%CF2%94%EE%25v%12X%0C%BA%AC%F0%5E%F8*l%0AO%85%17%C2%97%BF%D4%C8%CE%DE%AD%11%CB%80q%2C%3E%AB%9ES%CD%C6%EC%25%D2L%D2%EBd%B8%BF%8A%F5B%C6%18%F9%901CZ%9D%BE%24M%9C%8A9%F2%DAP%0B'%06w%82%EB%E6%E2%5C%2F%D7%07%9E%BB%CC%5D%E1%FA%B9%08%AD.r%23%8E%C2%17%F5E%7C!%F0%BE3%BE%3E_%B7o%88a%A7%DB%BE%D3d%EB%A31Z%EB%BB%D3%91%BA%A2%B1z%94%8F%DB'%F6%3D%8E%AA%13%19%B2%B1%BE%B1~V%08%2B%B4%A2cjJ%B3tO%00%03%25mN%97%F3%05%93%EF%11%84%0B%7C%88%AE-%89%8F%ABbW%90O%2B%0Ao%99%0C%5E%97%0CI%AFH%D9.%B0%3B%8F%ED%03%B6S%D6%5D%E6i_s9%F3*p%E9%1B%FD%C3%EB.7U%06%5E%19%C0%D1s.%17%A03u%E4%09%B0%7C%5E%2C%EB%15%DB%1F%3C%9E%B7%80%91%3B%DBc%AD%3Dma%BA%8B%3EV%AB%DBt.%5B%1E%01%BB%0F%AB%D5%9F%CF%AA%D5%DD%E7%E4%7F%0Bx%A3%FC%06%A9%23%0A%D6%C2%A1_2%00%00%00%09pHYs%00%00%0B%13%00%00%0B%13%01%00%9A%9C%18%00%00%00%B5IDAT(%15%A5%91%3D%0E%02!%10%85ac%E1%05%D6%CE%D6%C6%CE%D2%E8%ED%CD%DE%C0%C6%D6N.%E0V%F8%3D%9Ca%891XH%C2%BE%D9y%3F%90!%E6%9C%C3%BFk%E5%011%C6-%F5%C8N%04%DF%BD%FF%89%DFt%83DN%60%3E%F3%AB%A0%DE%1A%5Dg%BE%10Q%97%1B%40%9C%A8o%10%8F%5E%828%B4%1B%60%87%F6%02%26%85%1Ch%1E%C1%2B%5Bk%FF%86%EE%B7j%09%9A%DA%9B%ACe%A3%F9%EC%DA!9%B4%D5%A6%81%86%86%98%CC%3C%5B%40%FA%81%B3%E9%CB%23%94%C16Azo%05%D4%E1%C1%95a%3B%8A'%A0%E8%CC%17%22%85%1D%BA%00%A2%FA%DC%0A%94%D1%D1%8D%8B%3A%84%17B%C7%60%1A%25Z%FC%8D%00%00%00%00IEND%AEB%60%82"),url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%05%00%00%007%08%06%00%00%00%C4%DD%80C%00%00%03%1EiCCPICC%20Profile%00%00x%01%85T%DFk%D3P%14%FE%DAe%9D%B0%E1%8B%3Ag%11%09%3Eh%91ndStC%9C%B6kW%BA%CDZ%EA6%B7!H%9B%A6m%5C%9A%C6%24%ED~%B0%07%D9%8Bo%3A%C5w%F1%07%3E%F9%07%0C%D9%83o%7B%92%0D%C6%14a%F8%AC%88%22L%F6%22%B3%9E%9B4M'S%03%B9%F7%BB%DF%F9%EE9'%E7%E4%5E%A0%F9qZ%D3%14%2F%0F%14USO%C5%C2%FC%C4%E4%14%DF%F2%01%5E%1CC%2B%FChM%8B%86%16J%26G%40%0F%D3%B2y%EF%B3%F3%0E%1E%C6lt%EEo%DF%AB%FEc%D5%9A%95%0C%11%F0%1C%20%BE%945%C4%22%E1Y%A0i%5C%D4t%13%E0%D6%89%EF%9D15%C2%CDLsX%A7%04%09%1Fg8oc%81%E1%8C%8D%23%96f45%40%9A%09%C2%07%C5B%3AK%B8%408%98i%E0%F3%0D%D8%CE%81%14%E4'%26%A9%92.%8B%3C%ABER%2F%E5dE%B2%0C%F6%F0%1Fs%83%F2_%B0%A8%94%E9%9B%AD%E7%10%8Dm%9A%19N%D1%7C%8A%DE%1F9%7Dp%8C%E6%00%D5%C1%3F_%18%BDA%B8%9DpX6%E3%A35~B%CD%24%AE%11%26%BD%E7%EEti%98%EDe%9A%97Y)%12%25%1C%24%BCbT%AE3li%E6%0B%03%89%9A%E6%D3%ED%F4P%92%B0%9F4%BF43Y%F3%E3%EDP%95%04%EB1%C5%F5%F6KF%F4%BA%BD%D7%DB%91%93%07%E35%3E%A7)%D6%7F%40%FE%BD%F7%F5r%8A%E5y%92%F0%EB%B4%1E%8D%D5%F4%5B%92%3AV%DB%DB%E4%CD%A6%23%C3%C4wQ%3F%03HB%82%8E%1Cd(%E0%91B%0Ca%9Ac%C4%AA%F8L%16%19%22J%A4%D2itTy%B28%D6%3B(%93%96%ED%1CGx%C9_%0E%B8%5E%16%F5%5B%B2%B8%F6%E0%FB%9E%DD%25%D7%8E%BC%15%85%C5%B7%A3%D8Q%ED%B5%81%E9%BA%B2%13%9A%1B%7Fua%A5%A3n%E17%B9%E5%9B%1Bm%AB%0B%08Q%FE%8A%E5%B1H%5Ee%CAO%82Q%D7u6%E6%90S%97%FCu%0B%CF2%94%EE%25v%12X%0C%BA%AC%F0%5E%F8*l%0AO%85%17%C2%97%BF%D4%C8%CE%DE%AD%11%CB%80q%2C%3E%AB%9ES%CD%C6%EC%25%D2L%D2%EBd%B8%BF%8A%F5B%C6%18%F9%901CZ%9D%BE%24M%9C%8A9%F2%DAP%0B'%06w%82%EB%E6%E2%5C%2F%D7%07%9E%BB%CC%5D%E1%FA%B9%08%AD.r%23%8E%C2%17%F5E%7C!%F0%BE3%BE%3E_%B7o%88a%A7%DB%BE%D3d%EB%A31Z%EB%BB%D3%91%BA%A2%B1z%94%8F%DB'%F6%3D%8E%AA%13%19%B2%B1%BE%B1~V%08%2B%B4%A2cjJ%B3tO%00%03%25mN%97%F3%05%93%EF%11%84%0B%7C%88%AE-%89%8F%ABbW%90O%2B%0Ao%99%0C%5E%97%0CI%AFH%D9.%B0%3B%8F%ED%03%B6S%D6%5D%E6i_s9%F3*p%E9%1B%FD%C3%EB.7U%06%5E%19%C0%D1s.%17%A03u%E4%09%B0%7C%5E%2C%EB%15%DB%1F%3C%9E%B7%80%91%3B%DBc%AD%3Dma%BA%8B%3EV%AB%DBt.%5B%1E%01%BB%0F%AB%D5%9F%CF%AA%D5%DD%E7%E4%7F%0Bx%A3%FC%06%A9%23%0A%D6%C2%A1_2%00%00%00%09pHYs%00%00%0B%13%00%00%0B%13%01%00%9A%9C%18%00%00%00%3AIDAT8%11c%FC%FF%FF%7F%18%03%1A%60%01%F2%3F%A0%891%80%04%FF%11-%F8%17%9BJ%E2%05%B1ZD%81v%26t%E7%80%F8%A3%82h%A12%1A%20%A3%01%02%0F%01%BA%25%06%00%19%C0%0D%AEF%D5%3ES%00%00%00%00IEND%AEB%60%82");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;-moz-border-radius: 2px;-webkit-border-radius: 2px;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%11%00%00%00%09%08%06%00%00%00%D4%E8%C7%0C%00%00%03%1EiCCPICC%20Profile%00%00x%01%85T%DFk%D3P%14%FE%DAe%9D%B0%E1%8B%3Ag%11%09%3Eh%91ndStC%9C%B6kW%BA%CDZ%EA6%B7!H%9B%A6m%5C%9A%C6%24%ED~%B0%07%D9%8Bo%3A%C5w%F1%07%3E%F9%07%0C%D9%83o%7B%92%0D%C6%14a%F8%AC%88%22L%F6%22%B3%9E%9B4M'S%03%B9%F7%BB%DF%F9%EE9'%E7%E4%5E%A0%F9qZ%D3%14%2F%0F%14USO%C5%C2%FC%C4%E4%14%DF%F2%01%5E%1CC%2B%FChM%8B%86%16J%26G%40%0F%D3%B2y%EF%B3%F3%0E%1E%C6lt%EEo%DF%AB%FEc%D5%9A%95%0C%11%F0%1C%20%BE%945%C4%22%E1Y%A0i%5C%D4t%13%E0%D6%89%EF%9D15%C2%CDLsX%A7%04%09%1Fg8oc%81%E1%8C%8D%23%96f45%40%9A%09%C2%07%C5B%3AK%B8%408%98i%E0%F3%0D%D8%CE%81%14%E4'%26%A9%92.%8B%3C%ABER%2F%E5dE%B2%0C%F6%F0%1Fs%83%F2_%B0%A8%94%E9%9B%AD%E7%10%8Dm%9A%19N%D1%7C%8A%DE%1F9%7Dp%8C%E6%00%D5%C1%3F_%18%BDA%B8%9DpX6%E3%A35~B%CD%24%AE%11%26%BD%E7%EEti%98%EDe%9A%97Y)%12%25%1C%24%BCbT%AE3li%E6%0B%03%89%9A%E6%D3%ED%F4P%92%B0%9F4%BF43Y%F3%E3%EDP%95%04%EB1%C5%F5%F6KF%F4%BA%BD%D7%DB%91%93%07%E35%3E%A7)%D6%7F%40%FE%BD%F7%F5r%8A%E5y%92%F0%EB%B4%1E%8D%D5%F4%5B%92%3AV%DB%DB%E4%CD%A6%23%C3%C4wQ%3F%03HB%82%8E%1Cd(%E0%91B%0Ca%9Ac%C4%AA%F8L%16%19%22J%A4%D2itTy%B28%D6%3B(%93%96%ED%1CGx%C9_%0E%B8%5E%16%F5%5B%B2%B8%F6%E0%FB%9E%DD%25%D7%8E%BC%15%85%C5%B7%A3%D8Q%ED%B5%81%E9%BA%B2%13%9A%1B%7Fua%A5%A3n%E17%B9%E5%9B%1Bm%AB%0B%08Q%FE%8A%E5%B1H%5Ee%CAO%82Q%D7u6%E6%90S%97%FCu%0B%CF2%94%EE%25v%12X%0C%BA%AC%F0%5E%F8*l%0AO%85%17%C2%97%BF%D4%C8%CE%DE%AD%11%CB%80q%2C%3E%AB%9ES%CD%C6%EC%25%D2L%D2%EBd%B8%BF%8A%F5B%C6%18%F9%901CZ%9D%BE%24M%9C%8A9%F2%DAP%0B'%06w%82%EB%E6%E2%5C%2F%D7%07%9E%BB%CC%5D%E1%FA%B9%08%AD.r%23%8E%C2%17%F5E%7C!%F0%BE3%BE%3E_%B7o%88a%A7%DB%BE%D3d%EB%A31Z%EB%BB%D3%91%BA%A2%B1z%94%8F%DB'%F6%3D%8E%AA%13%19%B2%B1%BE%B1~V%08%2B%B4%A2cjJ%B3tO%00%03%25mN%97%F3%05%93%EF%11%84%0B%7C%88%AE-%89%8F%ABbW%90O%2B%0Ao%99%0C%5E%97%0CI%AFH%D9.%B0%3B%8F%ED%03%B6S%D6%5D%E6i_s9%F3*p%E9%1B%FD%C3%EB.7U%06%5E%19%C0%D1s.%17%A03u%E4%09%B0%7C%5E%2C%EB%15%DB%1F%3C%9E%B7%80%91%3B%DBc%AD%3Dma%BA%8B%3EV%AB%DBt.%5B%1E%01%BB%0F%AB%D5%9F%CF%AA%D5%DD%E7%E4%7F%0Bx%A3%FC%06%A9%23%0A%D6%C2%A1_2%00%00%00%09pHYs%00%00%0B%13%00%00%0B%13%01%00%9A%9C%18%00%00%00%B5IDAT(%15%A5%91%3D%0E%02!%10%85ac%E1%05%D6%CE%D6%C6%CE%D2%E8%ED%CD%DE%C0%C6%D6N.%E0V%F8%3D%9Ca%891XH%C2%BE%D9y%3F%90!%E6%9C%C3%BFk%E5%011%C6-%F5%C8N%04%DF%BD%FF%89%DFt%83DN%60%3E%F3%AB%A0%DE%1A%5Dg%BE%10Q%97%1B%40%9C%A8o%10%8F%5E%828%B4%1B%60%87%F6%02%26%85%1Ch%1E%C1%2B%5Bk%FF%86%EE%B7j%09%9A%DA%9B%ACe%A3%F9%EC%DA!9%B4%D5%A6%81%86%86%98%CC%3C%5B%40%FA%81%B3%E9%CB%23%94%C16Azo%05%D4%E1%C1%95a%3B%8A'%A0%E8%CC%17%22%85%1D%BA%00%A2%FA%DC%0A%94%D1%D1%8D%8B%3A%84%17B%C7%60%1A%25Z%FC%8D%00%00%00%00IEND%AEB%60%82"),url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%05%00%00%007%08%06%00%00%00%C4%DD%80C%00%00%03%1EiCCPICC%20Profile%00%00x%01%85T%DFk%D3P%14%FE%DAe%9D%B0%E1%8B%3Ag%11%09%3Eh%91ndStC%9C%B6kW%BA%CDZ%EA6%B7!H%9B%A6m%5C%9A%C6%24%ED~%B0%07%D9%8Bo%3A%C5w%F1%07%3E%F9%07%0C%D9%83o%7B%92%0D%C6%14a%F8%AC%88%22L%F6%22%B3%9E%9B4M'S%03%B9%F7%BB%DF%F9%EE9'%E7%E4%5E%A0%F9qZ%D3%14%2F%0F%14USO%C5%C2%FC%C4%E4%14%DF%F2%01%5E%1CC%2B%FChM%8B%86%16J%26G%40%0F%D3%B2y%EF%B3%F3%0E%1E%C6lt%EEo%DF%AB%FEc%D5%9A%95%0C%11%F0%1C%20%BE%945%C4%22%E1Y%A0i%5C%D4t%13%E0%D6%89%EF%9D15%C2%CDLsX%A7%04%09%1Fg8oc%81%E1%8C%8D%23%96f45%40%9A%09%C2%07%C5B%3AK%B8%408%98i%E0%F3%0D%D8%CE%81%14%E4'%26%A9%92.%8B%3C%ABER%2F%E5dE%B2%0C%F6%F0%1Fs%83%F2_%B0%A8%94%E9%9B%AD%E7%10%8Dm%9A%19N%D1%7C%8A%DE%1F9%7Dp%8C%E6%00%D5%C1%3F_%18%BDA%B8%9DpX6%E3%A35~B%CD%24%AE%11%26%BD%E7%EEti%98%EDe%9A%97Y)%12%25%1C%24%BCbT%AE3li%E6%0B%03%89%9A%E6%D3%ED%F4P%92%B0%9F4%BF43Y%F3%E3%EDP%95%04%EB1%C5%F5%F6KF%F4%BA%BD%D7%DB%91%93%07%E35%3E%A7)%D6%7F%40%FE%BD%F7%F5r%8A%E5y%92%F0%EB%B4%1E%8D%D5%F4%5B%92%3AV%DB%DB%E4%CD%A6%23%C3%C4wQ%3F%03HB%82%8E%1Cd(%E0%91B%0Ca%9Ac%C4%AA%F8L%16%19%22J%A4%D2itTy%B28%D6%3B(%93%96%ED%1CGx%C9_%0E%B8%5E%16%F5%5B%B2%B8%F6%E0%FB%9E%DD%25%D7%8E%BC%15%85%C5%B7%A3%D8Q%ED%B5%81%E9%BA%B2%13%9A%1B%7Fua%A5%A3n%E17%B9%E5%9B%1Bm%AB%0B%08Q%FE%8A%E5%B1H%5Ee%CAO%82Q%D7u6%E6%90S%97%FCu%0B%CF2%94%EE%25v%12X%0C%BA%AC%F0%5E%F8*l%0AO%85%17%C2%97%BF%D4%C8%CE%DE%AD%11%CB%80q%2C%3E%AB%9ES%CD%C6%EC%25%D2L%D2%EBd%B8%BF%8A%F5B%C6%18%F9%901CZ%9D%BE%24M%9C%8A9%F2%DAP%0B'%06w%82%EB%E6%E2%5C%2F%D7%07%9E%BB%CC%5D%E1%FA%B9%08%AD.r%23%8E%C2%17%F5E%7C!%F0%BE3%BE%3E_%B7o%88a%A7%DB%BE%D3d%EB%A31Z%EB%BB%D3%91%BA%A2%B1z%94%8F%DB'%F6%3D%8E%AA%13%19%B2%B1%BE%B1~V%08%2B%B4%A2cjJ%B3tO%00%03%25mN%97%F3%05%93%EF%11%84%0B%7C%88%AE-%89%8F%ABbW%90O%2B%0Ao%99%0C%5E%97%0CI%AFH%D9.%B0%3B%8F%ED%03%B6S%D6%5D%E6i_s9%F3*p%E9%1B%FD%C3%EB.7U%06%5E%19%C0%D1s.%17%A03u%E4%09%B0%7C%5E%2C%EB%15%DB%1F%3C%9E%B7%80%91%3B%DBc%AD%3Dma%BA%8B%3EV%AB%DBt.%5B%1E%01%BB%0F%AB%D5%9F%CF%AA%D5%DD%E7%E4%7F%0Bx%A3%FC%06%A9%23%0A%D6%C2%A1_2%00%00%00%09pHYs%00%00%0B%13%00%00%0B%13%01%00%9A%9C%18%00%00%003IDAT8%11c%FC%FF%FF%7F%3E%03%1A%60%01%F2%3F%A3%891%80%04%FFQ%26%F8w%C0%B43%A1%DB%0C%E2%8F%0A%A2%85%CAh%80%8C%06%08%3C%04%E8%96%18%00%A3S%0D%CD%CF%D8%C1%9D%00%00%00%00IEND%AEB%60%82");background-repeat: no-repeat, repeat-x;background-position: center center, top left;}.ace_editor.ace_dragging .ace_content {cursor: move;}.ace_gutter-tooltip {background-color: #FFF;background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.1));background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;display: inline-block;max-width: 500px;padding: 4px;position: fixed;z-index: 999999;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;cursor: default;white-space: pre-line;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%05%00%00%00%05%08%06%00%00%00%8Do%26%E5%00%00%004IDATx%DAe%8A%B1%0D%000%0C%C2%F2%2CK%96%BC%D0%8F9%81%88H%E9%D0%0E%96%C0%10%92%3E%02%80%5E%82%E4%A9*-%EEsw%C8%CC%11%EE%96w%D8%DC%E9*Eh%0C%151(%00%00%00%00IEND%AEB%60%82");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%05%00%00%00%05%08%06%00%00%00%8Do%26%E5%00%00%004IDATx%DAm%C7%C1%09%000%08C%D1%8C%ECE%C8E(%8E%EC%02)%1EZJ%F1%C1'%04%07I%E1%E5%EE%CAL%F5%A2%99%99%22%E2%D6%1FU%B5%FE0%D9x%A7%26Wz5%0E%D5%00%00%00%00IEND%AEB%60%82");}.ace_fold-widget.ace_closed {background-image: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%03%00%00%00%06%08%06%00%00%00%06%E5%24%0C%00%00%009IDATx%DA5%CA%C1%09%000%08%03%C0%AC*(%3E%04%C1%0D%BA%B1%23%A4Uh%E0%20%81%C0%CC%F8%82%81%AA%A2%AArGfr%88%08%11%11%1C%DD%7D%E0%EE%5B%F6%F6%CB%B8%05Q%2F%E9tai%D9%00%00%00%00IEND%AEB%60%82");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);-moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);-webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);-moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);-webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}/*** Dark version for fold widgets*/.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {-moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);-webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {-moz-transition: opacity 0.4s ease 0.05s;-webkit-transition: opacity 0.4s ease 0.05s;-o-transition: opacity 0.4s ease 0.05s;-ms-transition: opacity 0.4s ease 0.05s;transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {-moz-transition: opacity 0.05s ease 0.05s;-webkit-transition: opacity 0.05s ease 0.05s;-o-transition: opacity 0.05s ease 0.05s;-ms-transition: opacity 0.05s ease 0.05s;transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;}.ace-tm .ace_cursor {border-left: 2px solid black;}.ace-tm .ace_overwrite-cursors .ace_cursor {border-left: 0px;border-bottom: 1px solid black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;border-radius: 2px;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}</style>
+
+<meta content="authenticity_token" name="csrf-param">
+<meta content="8pOIFiMeA+h2yNefCncFqdZ1xDl6R2VG28IS3jt5PQw=" name="csrf-token">
+<link rel="stylesheet" type="text/css" href="https://csdnimg.cn/rabbit/notev2/css/style.css?4d63d1f"></head>
+
+<body>
+<script fixed="true" id="toolbar-tpl-scriptId" prod="code" skin="black" src="//csdnimg.cn/public/common/toolbar/js/html.js" type="text/javascript"></script><div class="csdn-toolbar csdn-toolbar-skin-black ">        <div class="container row center-block ">          <div class="col-md-3 pull-left logo clearfix"><a href="http://www.csdn.net?ref=toolbar" title="CSDN首页" target="_blank" class="icon"></a><a title="频道首页" href="https://code.csdn.net?ref=toolbar_logo" class="img code-icon" target="_self"></a></div>          <div class="pull-right login-wrap ">            <ul class="btns">              <li class="loginlink"><a href="https://passport.csdn.net/account/login?ref=toolbar" target="_top">登录&nbsp;</a>|<a target="_top" href="http://passport.csdn.net/account/mobileregister?action=mobileRegister">&nbsp;注册</a></li>              <li class="search">                <div class="icon on-search-icon">                  <div class="wrap">                    <div class="curr-icon-wrap">                      <div class="curr-icon"></div>                    </div>                    <form action="http://so.csdn.net/search" method="get" target="_blank">                      <input type="hidden" value="toolbar" name="ref" accesskey="2">                      <div class="border">                        <input placeholder="搜索" type="text" value="" name="q" accesskey="2"><span class="icon-enter-sm"></span>                      </div>                    </form>                  </div>                </div>              </li>              <li class="favor">                <div class="icon on-favor-icon">                  <div class="wrap">                    <div class="curr-icon-wrap">                      <div class="curr-icon"></div>                    </div>                    <div style="display:none;" class="favor-success"><span class="msg">收藏成功</span>                      <div class="btns"><span class="btn btn-primary ok">确定</span></div>                    </div>                    <div style="display:none;" class="favor-failed"><span class="icon-danger-lg"></span><span class="msg">收藏失败，请重新收藏</span>                      <div class="btns"><span class="btn btn-primary ok">确定</span></div>                    </div>                    <form role="form" class="form-horizontal favor-form">                      <div class="form-group">                        <div class="clearfix">                          <label for="input-title" class="col-sm-2 control-label">标题</label>                          <div class="col-sm-10">                            <input id="inputTitle" type="text" placeholder="" class="title form-control">                          </div>                        </div>                        <div class="alert alert-danger"><strong></strong>标题不能为空</div>                      </div>                      <div class="form-group">                        <label for="input-url" class="col-sm-2 control-label">网址</label>                        <div class="col-sm-10">                          <input id="input-url" type="text" placeholder="" class="url form-control">                        </div>                      </div>                      <div class="form-group">                        <label for="input-tag" class="col-sm-2 tag control-label">标签</label>                        <div class="col-sm-10">                          <input id="input-tag" type="text" class="form-control tag">                        </div>                      </div>                      <div class="form-group">                        <label for="input-description" class="description col-sm-2 control-label">摘要</label>                        <div class="col-sm-10">                          <textarea id="input-description" class="form-control description"></textarea>                        </div>                      </div>                      <div class="form-group">                        <div class="col-sm-offset-2 col-sm-10 ft">                          <div class="col-sm-4 pull-left">                            <div class="checkbox">                              <label>                                <input type="checkbox" name="share" checked="checked" class="share">公开                              </label>                            </div>                          </div>                          <div class="col-sm-8 pull-right favor-btns">                            <button type="button" class="cancel btn btn-default">取消</button>                            <button type="submit" class="submit btn btn-primary">收藏</button>                          </div>                        </div>                      </div>                    </form>                  </div>                </div>              </li>              <li class="notify">                <div style="display:none" class="number"></div>                <div style="display:none" class="icon-hasnotes-sm"></div>                <div id="header_notice_num"></div>                <div class="icon on-notify-icon">                  <div class="wrap">                    <div class="curr-icon-wrap">                      <div class="curr-icon"></div>                    </div>                    <div id="note1" class="csdn_note" style="left: -212px; top: 29px;">                      <div class="box"><div class="notifications notice_list_con curr">  <div class="menu_title">    <span class="title"><a href="http://msg.csdn.net/letters" target="_blank" class="read_all">查看所有私信</a><a href="http://msg.csdn.net" target="_blank" class="go_all">查看所有通知</a></span>  </div>  <div class="loading"></div>  <div class="empty">暂没有新通知</div>  <div class="notice_content"></div></div><div class="notifications detail_con" style="display: none">  <div class="menu_title">    <span class="title">      <a class="go_back" href="javascript:void 0;">返回通知列表</a>      <a class="notifications_page_none nextnote" href="javascript:void 0;">下一条</a>      <a class="notifications_page prvnote" href="javascript:void 0;">上一条</a>    </span>  </div>  <div class="notice_content" style="overflow-y: scroll; height: 250px;"></div></div><div class="error"></div></div>                    <iframe src="about:block" frameborder="0" allowtransparency="true" style="z-index:-1;position:absolute;top:0;left:0;width:100%;height:100%;background:transparent"></iframe></div>                  </div>                </div>              </li>              <li class="ugc">                <div class="icon on-ugc-icon">                  <div class="wrap clearfix">                    <div class="curr-icon-wrap">                      <div class="curr-icon"></div>                    </div>                    <dl>                      <dt><a href="http://geek.csdn.net/news/expert?ref=toolbar" target="_blank" class="p-news clearfix" style="display:none;"><em class="icon"></em><span>分享资讯</span></a></dt>                      <dt><a href="http://u.download.csdn.net/upload?ref=toolbar" target="_blank" class="p-doc clearfix"><em class="icon"></em><span>传PPT/文档</span></a></dt>                      <dt><a href="http://bbs.csdn.net/topics/new?ref=toolbar" target="_blank" class="p-ask clearfix"><em class="icon"></em><span>提问题</span></a></dt>                      <dt><a href="http://write.blog.csdn.net/postedit?ref=toolbar" target="_blank" class="p-blog clearfix"><em class="icon"></em><span>写博客</span></a></dt>                      <dt><a href="http://u.download.csdn.net/upload?ref=toolbar" target="_blank" class="p-src clearfix"><em class="icon"></em><span>传资源</span></a></dt>                      <dt><a href="https://code.csdn.net/projects/new?ref=toolbar" target="_blank" class="c-obj clearfix"><em class="icon"></em><span>创建项目</span></a></dt>                      <dt><a href="https://code.csdn.net/snippets/new?ref=toolbar" target="_blank" class="c-code clearfix"><em class="icon"></em><span>创建代码片</span></a></dt>                    </dl>                  </div>                </div>              </li>              <li class="profile">                <div class="icon on-profile-icon"><img src="http://avatar.csdn.net/F/2/7/2_xzj111.jpg" class="curr-icon-img">                  <div class="wrap clearfix">                    <div class="curr-icon-wrap">                      <div class="curr-icon"></div>                    </div>                    <div class="bd">                      <dl class="clearfix">                        <dt class="pull-left img"><a target="_blank" href="http://my.csdn.net?ref=toolbar" class="avatar"><img src="http://avatar.csdn.net/F/2/7/2_xzj111.jpg"></a></dt>                        <dd class="info" style="border: none;"><a target="_blank" href="http://my.csdn.net?ref=toolbar" class="nickname">xzj111</a><span class="dec"><a class="fill-dec" href="//my.csdn.net" target="_blank">编辑自我介绍，让更多人了解你<span class="write-icon"></span></a></span></dd>                      </dl>                    </div>                    <div class="ft clearfix"><a target="_blank" href="http://my.csdn.net/my/account/changepwd?ref=toolbar" class="pull-left"><span class="icon-cog"></span>帐号设置</a><a href="https://passport.csdn.net/account/logout?ref=toolbar" target="_top" class="pull-left" style="margin-left:132px; width:18px; height:27px; white-space:nowrap; overflow:hidden;"><span class="icon-signout"></span><span class="out">退出</span></a></div>                  </div>                </div>              </li>              <li class="apps">                <div id="chasnew123" class="hasnew" style="display: none;"></div>                <div id="cappsarea123" class="icon on-apps-icon">                  <div class="wrap clearfix">                    <div class="curr-icon-wrap">                      <div class="curr-icon"></div>                    </div>                  <div class="detail">                    <dl>                      <dt>                        <h5>社区</h5>                      </dt>                      <dd> <a href="http://blog.csdn.net?ref=toolbar" target="_blank">博客</a></dd>                      <dd> <a href="http://bbs.csdn.net?ref=toolbar" target="_blank">论坛</a></dd>                      <dd> <a href="http://download.csdn.net?ref=toolbar" target="_blank">下载</a></dd>                      <dd><a href="http://ask.csdn.net?ref=toolbar" target="_blank">技术问答</a></dd>                      <dd><a href="http://geek.csdn.net?ref=toolbar" target="_blank">极客头条</a></dd>                      <dd> <a href="http://hero.csdn.net?ref=toolbar" target="_blank">英雄会</a></dd>                    </dl>                  </div>                  <div class="detail">                    <dl>                      <dt>                        <h5>服务</h5>                      </dt>                      <dd> <a href="http://job.csdn.net?ref=toolbar" target="_blank">JOB<img src="http://c.csdnimg.cn/public/common/toolbar/images/new.gif" style="display: none; margin-top: -26px; width: 23px;"></a></dd>                      <dd> <a href="http://edu.csdn.net?ref=toolbar" target="_blank">学院<img src="http://c.csdnimg.cn/public/common/toolbar/images/new.gif" style="display: none; margin-top: -26px; width: 23px;"></a></dd>                      <dd> <a href="https://code.csdn.net?ref=toolbar" target="_blank">CODE</a></dd>                      <dd> <a href="http://huiyi.csdn.net/?ref=toolbar" target="_blank">活动</a></dd>                      <dd> <a href="http://www.csto.com?ref=toolbar" target="_blank">CSTO</a></dd>                      <dd> <a href="http://mall.csdn.net?ref=toolbar" target="_blank">C币兑换<img src="http://c.csdnimg.cn/public/common/toolbar/images/new.gif" style="display: none; margin-top: -26px; width: 23px;"></a></dd>                    </dl>                  </div>                  <div class="detail last">                    <dl>                      <dt>                        <h5>俱乐部</h5>                      </dt>                      <dd> <a href="http://cto.csdn.net?ref=toolbar" target="_blank">CTO俱乐部</a></dd>                      <dd> <a href="http://student.csdn.net?ref=toolbar" target="_blank">高校俱乐部</a></dd>                    </dl>                  </div>                </div>              </div>            </li>            </ul>          </div>        </div>    </div>
+<script>
+  //<![CDATA[
+    var protocol = window.location.protocol;
+    document.write('<script type="text/javascript" src="' +protocol+ '//csdnimg.cn/pubfooter/js/repoAddr2.js?v=' + Math.random() + '"></'+'script>');
+  //]]>
+</script><script type="text/javascript" src="https://csdnimg.cn/pubfooter/js/repoAddr2.js?v=0.49866149411536753"></script>
+<header class="csdn-nav navbar navbar-static-top" role="banner">
+<div class="container">
+<nav class="navbar-collapse pull-left" role="navigation">
+<ul class="navbar-nav">
+<li class="">
+<a href="/explore/projects">发现</a>
+</li>
+<li class="">
+<a href="/openkb">知识库</a>
+</li>
+<li class="">
+<a href="/group">讨论组</a>
+</li>
+<li class="">
+<a href="/translations">翻译</a>
+</li>
+</ul>
+</nav>
+<div class="search pull-left">
+<form action="/search" method="get">
+<input accesskey="s" class="new" id="s" name="search" placeholder="搜索" required="required" size="30" tabindex="1" type="text">
+<button type="submit">
+<i class="icon-search"></i>
+</button>
+</form>
+</div>
+<div class="pull-right">
+<a href="/dashboard/index">我的CODE</a>
+<a data-original-title="设置" data-toggle="tooltip" href="/keys">
+<i class="icon-cog"></i>
+</a>
+</div>
+</div>
+</header>
+<script>
+  //<![CDATA[
+    $('.dropdown-menu > li > a[name=aaa]').click(function(){
+           $('#search_form').attr('action', '/search');
+    
+          });
+    $('.dropdown-menu > li > a[name=bbb]').click(function(){
+           $('#search_form').attr('action', '/search_project');
+    
+          });
+    function btnclick(str){
+      var url = (str == "1" ? "/search" : "/search_project");
+      $('#search_form').attr('action', url).submit();
+    }
+  //]]>
+</script>
+<!--[if lt IE 9]> <div class="no-ie8 alert alert-block"><h4>请注意：</h4><p>Code不支持ie8及以下版本；建议您升级到最新的ie浏览器，或者谷歌Chrome、Firefox、Safari等；如果您使用的是IE 9+，请关闭“兼容性视图”。</p></div> <![endif]-->
+
+<!-- = render "sdev_toolshared/user_diskspace_over_limit" -->
+
+<div class="container main_container">
+<div class="gist_edit">
+<div class="gist_edit_top">
+<ul class="pull-left">
+<li class="tip" data-original-title="公开代码片" data-placement="bottom">
+<a href="/snippets/53545">
+<span class="svg" style="background-image: url(/assets/ico_public_snippet.svg); "></span>
+统计词频
+</a>
+</li>
+</ul>
+<div class="pull-right">
+<a class="btn btn-small" href="/dashboard/snippets">我的代码片</a>
+</div>
+</div>
+<form accept-charset="UTF-8" action="/snippets" class="snippet_form" id="new_snippet" method="post" onsubmit="return nameValidate();"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="8pOIFiMeA+h2yNefCncFqdZ1xDl6R2VG28IS3jt5PQw="></div>
+<div class="alert alert-error hide">
+<span></span>
+</div>
+<div class="discuss_box">
+<dl>
+<dt>
+<img alt="1_xzj111" class="avatar_50" src="https://code.csdn.net/avatar_csdn_net_proxy/F/2/7/1_xzj111.jpg">
+<span>
+<a href="/xzj111">xzj111</a>
+</span>
+</dt>
+<dd class="box_shadow_gray">
+<textarea cols="40" id="title" name="snippet[description]" placeholder="代码片描述..." rows="20" style="height: 61px;"></textarea>
+</dd>
+</dl>
+</div>
+<script src="/assets/csdn_tags/main_code-8a856168fb693c4d7d49185aac2f3f27.js" type="text/javascript"></script>
+<link href="/assets/csdn_tags/main-7aa689de6d1ad7cc39fbbbadc79a20d4.css" media="screen" rel="stylesheet" type="text/css">
+<div class="tag_input tag" id="tags" style="box-sizing: border-box; width: 100%;">              <input type="text" ,="" placeholder="标签(最多5个)" value="" size="1" class="autocompleteTags" autocomplete="off">              <div class="tag tag_reco" style="display: none;">                <table>                <tbody><tr>                  <th>推荐标签：</th>                  <td class="tagWrap"></td>                </tr>               </tbody></table>              </div>              <em class="content"></em></div>
+<script>
+  //<![CDATA[
+    function get_tags(){
+      var tag = '';
+      $('#tags span').each(function(){
+        tag += $(this).text() + ',';
+      });
+      tag = tag.substring(0,tag.lastIndexOf(','));
+      if(document.getElementById('snippet_tags')){
+        $("#snippet_tags").val(tag);
+      }else{
+        tag_html = '<input type="hidden" id="snippet_tags" name="snippet[tags]" value="' + tag + '" />';
+        $("#tags").after(tag_html);
+      }
+    }
+    
+    //标签初始化
+    var old_title = null;
+    var old_content = null;
+    csdn.AutoTags.run();
+    $(function(){
+      var old_tags = "";
+      if (old_tags != "" || old_tags == null){
+        tags.addDefault(old_tags);
+      }
+    
+      $("#tags input").focus(function(){
+        var new_title = get_all_title();
+        var new_content = get_all_content();
+        if(old_title != new_title || old_content != new_content){
+          old_title = new_title;
+          old_content = new_content;
+          tags.initTags(new_title, new_content);
+        }
+      });
+    });
+    
+    function get_all_title(){
+      var title = $("#title").val();
+      $(".filename").each(function(){
+        title += " " + $(this).val();
+      })
+      return title
+    }
+    
+    function get_all_content(){
+      var content = "";
+      for(i=0; i < editors.length; i++){
+        content += " " + editors[i][1].getValue();
+      }
+      return content
+    }
+  //]]>
+</script>
+
+
+<br>
+<div class="compare_code_box">
+<div class="box_shadow_gray codeeditor">
+<div class="title clearfix">
+<input id="snippet_files_0_old_file_name" maxlength="40" name="snippet_files[][old_file_name]" type="hidden">
+<input class="filename" id="snippet_files_0_file_name" name="snippet_files[][file_name]" placeholder="请输入文件名及后缀，如：user.rb" type="text">
+<div class="btn-group filter-list language_set">
+<input id="snippet_files_0_language_tag_id" name="snippet_files[][language_tag_id]" type="hidden">
+<span class="btn language_txt">
+语言
+</span>
+<span class="btn dropdown-toggle">
+<span class="caret"></span>
+</span>
+<ul class="dropdown-menu-active">
+<h4>
+选择编码语言
+</h4><span class="close"></span>
+<input placeholder="筛选" type="text">
+<ul class="filter-ul">
+<li class="filter-li" id="1">
+<a>ABAP</a>
+</li>
+<li class="filter-li" id="2">
+<a>ASP</a>
+</li>
+<li class="filter-li" id="3">
+<a>ActionScript</a>
+</li>
+<li class="filter-li" id="4">
+<a>Ada</a>
+</li>
+<li class="filter-li" id="5">
+<a>Apex</a>
+</li>
+<li class="filter-li" id="6">
+<a>AppleScript</a>
+</li>
+<li class="filter-li" id="7">
+<a>Arc</a>
+</li>
+<li class="filter-li" id="8">
+<a>Arduino</a>
+</li>
+<li class="filter-li" id="9">
+<a>Assembly</a>
+</li>
+<li class="filter-li" id="10">
+<a>Augeas</a>
+</li>
+<li class="filter-li" id="11">
+<a>AutoHotkey</a>
+</li>
+<li class="filter-li" id="12">
+<a>Awk</a>
+</li>
+<li class="filter-li" id="13">
+<a>Batchfile</a>
+</li>
+<li class="filter-li" id="14">
+<a>Boo</a>
+</li>
+<li class="filter-li" id="15">
+<a>Bro</a>
+</li>
+<li class="filter-li" id="16">
+<a>C</a>
+</li>
+<li class="filter-li" id="17">
+<a>C#</a>
+</li>
+<li class="filter-li" id="18">
+<a>C++</a>
+</li>
+<li class="filter-li" id="19">
+<a>C2hs Haskell</a>
+</li>
+<li class="filter-li" id="20">
+<a>CLIPS</a>
+</li>
+<li class="filter-li" id="21">
+<a>Ceylon</a>
+</li>
+<li class="filter-li" id="22">
+<a>Clojure</a>
+</li>
+<li class="filter-li" id="23">
+<a>CoffeeScript</a>
+</li>
+<li class="filter-li" id="24">
+<a>ColdFusion</a>
+</li>
+<li class="filter-li" id="25">
+<a>Common Lisp</a>
+</li>
+<li class="filter-li" id="26">
+<a>Coq</a>
+</li>
+<li class="filter-li" id="27">
+<a>Cython</a>
+</li>
+<li class="filter-li" id="28">
+<a>D</a>
+</li>
+<li class="filter-li" id="29">
+<a>DOT</a>
+</li>
+<li class="filter-li" id="30">
+<a>Dart</a>
+</li>
+<li class="filter-li" id="31">
+<a>Delphi</a>
+</li>
+<li class="filter-li" id="32">
+<a>DCPU-16 ASM</a>
+</li>
+<li class="filter-li" id="33">
+<a>Dylan</a>
+</li>
+<li class="filter-li" id="34">
+<a>Ecl</a>
+</li>
+<li class="filter-li" id="35">
+<a>Eiffel</a>
+</li>
+<li class="filter-li" id="36">
+<a>Elixir</a>
+</li>
+<li class="filter-li" id="37">
+<a>Elm</a>
+</li>
+<li class="filter-li" id="38">
+<a>Emacs Lisp</a>
+</li>
+<li class="filter-li" id="39">
+<a>Erlang</a>
+</li>
+<li class="filter-li" id="40">
+<a>F#</a>
+</li>
+<li class="filter-li" id="41">
+<a>FORTRAN</a>
+</li>
+<li class="filter-li" id="42">
+<a>Factor</a>
+</li>
+<li class="filter-li" id="43">
+<a>Fancy</a>
+</li>
+<li class="filter-li" id="44">
+<a>Fantom</a>
+</li>
+<li class="filter-li" id="45">
+<a>Forth</a>
+</li>
+<li class="filter-li" id="46">
+<a>GAS</a>
+</li>
+<li class="filter-li" id="47">
+<a>Go</a>
+</li>
+<li class="filter-li" id="48">
+<a>Gosu</a>
+</li>
+<li class="filter-li" id="49">
+<a>Groovy</a>
+</li>
+<li class="filter-li" id="50">
+<a>Haskell</a>
+</li>
+<li class="filter-li" id="51">
+<a>Haxe</a>
+</li>
+<li class="filter-li" id="52">
+<a>Io</a>
+</li>
+<li class="filter-li" id="53">
+<a>Ioke</a>
+</li>
+<li class="filter-li" id="54">
+<a>Java</a>
+</li>
+<li class="filter-li" id="55">
+<a>JavaScript</a>
+</li>
+<li class="filter-li" id="56">
+<a>Julia</a>
+</li>
+<li class="filter-li" id="57">
+<a>Kotlin</a>
+</li>
+<li class="filter-li" id="58">
+<a>Lasso</a>
+</li>
+<li class="filter-li" id="59">
+<a>Literate CoffeeScript</a>
+</li>
+<li class="filter-li" id="60">
+<a>Literate Haskell</a>
+</li>
+<li class="filter-li" id="61">
+<a>LiveScript</a>
+</li>
+<li class="filter-li" id="62">
+<a>Logos</a>
+</li>
+<li class="filter-li" id="63">
+<a>Logtalk</a>
+</li>
+<li class="filter-li" id="64">
+<a>Lua</a>
+</li>
+<li class="filter-li" id="65">
+<a>M</a>
+</li>
+<li class="filter-li" id="66">
+<a>Matlab</a>
+</li>
+<li class="filter-li" id="67">
+<a>Max</a>
+</li>
+<li class="filter-li" id="68">
+<a>Mirah</a>
+</li>
+<li class="filter-li" id="69">
+<a>Monkey</a>
+</li>
+<li class="filter-li" id="70">
+<a>MoonScript</a>
+</li>
+<li class="filter-li" id="71">
+<a>Nemerle</a>
+</li>
+<li class="filter-li" id="72">
+<a>Nimrod</a>
+</li>
+<li class="filter-li" id="73">
+<a>Nu</a>
+</li>
+<li class="filter-li" id="74">
+<a>OCaml</a>
+</li>
+<li class="filter-li" id="75">
+<a>Objective-C</a>
+</li>
+<li class="filter-li" id="76">
+<a>Objective-J</a>
+</li>
+<li class="filter-li" id="77">
+<a>Omgrofl</a>
+</li>
+<li class="filter-li" id="78">
+<a>Opa</a>
+</li>
+<li class="filter-li" id="79">
+<a>OpenCL</a>
+</li>
+<li class="filter-li" id="80">
+<a>OpenEdge ABL</a>
+</li>
+<li class="filter-li" id="81">
+<a>PHP</a>
+</li>
+<li class="filter-li" id="82">
+<a>Parrot</a>
+</li>
+<li class="filter-li" id="83">
+<a>Parrot Internal Representation</a>
+</li>
+<li class="filter-li" id="84">
+<a>Parrot Assembly</a>
+</li>
+<li class="filter-li" id="85">
+<a>Perl</a>
+</li>
+<li class="filter-li" id="86">
+<a>Pike</a>
+</li>
+<li class="filter-li" id="87">
+<a>PogoScript</a>
+</li>
+<li class="filter-li" id="88">
+<a>PowerShell</a>
+</li>
+<li class="filter-li" id="89">
+<a>Processing</a>
+</li>
+<li class="filter-li" id="90">
+<a>Prolog</a>
+</li>
+<li class="filter-li" id="91">
+<a>Puppet</a>
+</li>
+<li class="filter-li" id="92">
+<a>Pure Data</a>
+</li>
+<li class="filter-li" id="93">
+<a>Python</a>
+</li>
+<li class="filter-li" id="94">
+<a>R</a>
+</li>
+<li class="filter-li" id="95">
+<a>Racket</a>
+</li>
+<li class="filter-li" id="96">
+<a>Ragel in Ruby Host</a>
+</li>
+<li class="filter-li" id="97">
+<a>Rebol</a>
+</li>
+<li class="filter-li" id="98">
+<a>Rouge</a>
+</li>
+<li class="filter-li" id="99">
+<a>Ruby</a>
+</li>
+<li class="filter-li" id="100">
+<a>Rust</a>
+</li>
+<li class="filter-li" id="101">
+<a>Sage</a>
+</li>
+<li class="filter-li" id="102">
+<a>Scala</a>
+</li>
+<li class="filter-li" id="103">
+<a>Scheme</a>
+</li>
+<li class="filter-li" id="104">
+<a>Scilab</a>
+</li>
+<li class="filter-li" id="105">
+<a>Self</a>
+</li>
+<li class="filter-li" id="106">
+<a>Shell</a>
+</li>
+<li class="filter-li" id="107">
+<a>Smalltalk</a>
+</li>
+<li class="filter-li" id="108">
+<a>Standard ML</a>
+</li>
+<li class="filter-li" id="109">
+<a>SuperCollider</a>
+</li>
+<li class="filter-li" id="110">
+<a>TXL</a>
+</li>
+<li class="filter-li" id="111">
+<a>Tcl</a>
+</li>
+<li class="filter-li" id="112">
+<a>Tcsh</a>
+</li>
+<li class="filter-li" id="113">
+<a>Turing</a>
+</li>
+<li class="filter-li" id="114">
+<a>TypeScript</a>
+</li>
+<li class="filter-li" id="115">
+<a>Unified Parallel C</a>
+</li>
+<li class="filter-li" id="116">
+<a>VHDL</a>
+</li>
+<li class="filter-li" id="117">
+<a>Vala</a>
+</li>
+<li class="filter-li" id="118">
+<a>Verilog</a>
+</li>
+<li class="filter-li" id="119">
+<a>VimL</a>
+</li>
+<li class="filter-li" id="120">
+<a>Visual Basic</a>
+</li>
+<li class="filter-li" id="121">
+<a>XProc</a>
+</li>
+<li class="filter-li" id="122">
+<a>XQuery</a>
+</li>
+<li class="filter-li" id="123">
+<a>XSLT</a>
+</li>
+<li class="filter-li" id="124">
+<a>Xtend</a>
+</li>
+<li class="filter-li" id="125">
+<a>eC</a>
+</li>
+<li class="filter-li" id="126">
+<a>fish</a>
+</li>
+<li class="filter-li" id="127">
+<a>ooc</a>
+</li>
+<li class="filter-li" id="128">
+<a>html/xml</a>
+</li>
+<li class="filter-li" id="129">
+<a>css</a>
+</li>
+<li class="filter-li" id="130">
+<a>SQL</a>
+</li>
+</ul>
+</ul>
+<div class="dropdown_bg"></div></div>
+
+<span box_num="0" class="pull-right btn del_editor" style="display: none;">删除</span>
+</div>
+<div class="snippets_cont" style="width:952px;height:300px;">
+<input class="file_content" id="snippet_files_0_content" name="snippet_files[][content]" type="hidden">
+<pre id="editor_0" style="width:952px;height:300px;padding:0px;border:0;border-radius:0;" class=" ace_editor ace-tm ace_nobold"><textarea class="ace_text-input" wrap="off" spellcheck="false" style="bottom: 284px; height: 16px; width: 7.20125px; right: 899.79875px;"></textarea><div class="ace_gutter"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="margin-top: 0px; height: 332px; width: 41px;"><div class="ace_gutter-cell" style="height: 16px;">1</div></div><div class="ace_gutter-active-line" style="top: 0px; height: 16px;"></div></div><div class="ace_scroller" style="left: 41px; right: 0px; bottom: 0px;"><div class="ace_content" style="margin-top: 0px; width: 911px; height: 332px; margin-left: 0px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 580.1px; visibility: visible;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_active-line" style="height:16px;top:0px;left:0;right:0;"></div></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"><div class="ace_line" style="height:16px"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="left: 4px; top: 0px; width: 7.20125px; height: 16px;"></div></div></div></div><div style="height: auto; width: auto; top: -100px; left: -100px; visibility: hidden; position: fixed; overflow: visible; white-space: nowrap;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div><div class="ace_scrollbar" style="width: 20px; display: none; overflow-y: scroll; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 20px; height: 16px;"></div></div><div class="ace_scrollbar-h" style="height: 20px; display: none; overflow-x: scroll; left: 41px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 20px; width: 911px;"></div></div></pre>
+</div>
+</div>
+
+</div>
+<br>
+<div class="btn_area clearfix">
+<div class="pull-left">
+<a class="btn btn-large" id="addfile">添加文件</a>
+</div>
+<div class="pull-right">
+<div class="pull-left">
+<label>
+<input checked="checked" id="snippet_status_flag_0" name="snippet[status_flag]" type="radio" value="0">
+公开
+</label>
+<label>
+<input id="snippet_status_flag_1" name="snippet[status_flag]" type="radio" value="1">
+隐藏
+</label>
+<label>
+<input id="snippet_status_flag_2" name="snippet[status_flag]" type="radio" value="2">
+私有
+</label>
+</div>
+<input class="btn btn-large btn-success" id="submit_but" name="commit" type="submit" value="提交代码片">
+</div>
+</div>
+</form>
+</div>
+<script>
+  //<![CDATA[
+    //init default ace
+    ace.config.set("modePath", "/assets/ace-src-noconflict")
+    var count = 1;
+    var editors = []
+    for(i=0; i<count; i++){
+        editor = ace.edit("editor_" + i);
+        editors[editors.length] = ['snippet_files_' + i + '_content', editor];
+    }
+    
+    
+    var _CompareCount = $(".compare_code_box").find(".codeeditor").length;
+    if(_CompareCount>1){
+      $(".del_editor").show();
+    }else{
+      $(".del_editor").hide();
+    }
+    
+    // add file function
+    $("#addfile").click(function(){
+      newCompare(count);
+    });
+    
+    
+    //set ace to array
+    function nameValidate(){
+      get_tags();
+    
+      $('.alert-error').hide();
+      for(i=0; i < editors.length; i++){
+        $("#" + editors[i][0] ).val(editors[i][1].getValue());
+      }
+    
+      var can_submit_flag = false;
+      $('.filename').each(function(){
+        if($(this).val().length>0){
+          can_submit_flag = true;
+          return true;
+        }
+      });
+    
+      $('.file_content').each(function(){
+        if($(this).val().length>0){
+          can_submit_flag = true;
+          return true;
+        }
+      });
+    
+      if(can_submit_flag == false){
+        $('.alert-error').show().find('span').html('不能创建空的代码片！');
+        $('#submit_but').button("reset");
+      }
+      return can_submit_flag;
+    }
+    
+    // get new file part from server
+    function newCompare(n) {
+      var url = "/snippets/add_file";
+      $.get(url, {count: n}, function(data){
+        $(".compare_code_box").append(data);
+    
+        var filename = $("#editor_" + count).parents(".box_shadow_gray").find(".filename");
+        auto_check_language(filename);
+        var language_link = $("#editor_" + count).parents(".box_shadow_gray").find(".language_set .filter-ul");
+        self_check_language(language_link);
+    
+        var editor = ace.edit("editor_" + count);
+        editors[editors.length] = ['snippet_files_' + count + '_content', editor];
+        count ++ ;
+    
+        var _CompareCount = $(".compare_code_box").find(".codeeditor").length;
+        if(_CompareCount>1){
+          $(".del_editor").show();
+        }else{
+          $(".del_editor").hide();
+        }
+    
+        $(".del_editor").on("click",function(){
+          $(this).parents(".codeeditor").remove();
+    
+          box_num = $(this).attr('box_num');
+          for(i=0; i < editors.length; i++){
+            if(editors[i][0] == 'snippet_files_' + box_num + '_content'){
+              editors.splice(i,1);
+            }
+          }
+    
+          var _CompareCount = $(".compare_code_box").find(".codeeditor").length;
+          if(_CompareCount<2){
+            $(".del_editor").hide();
+          }
+        });
+    
+        // add self check language button click event
+        $('.dropdown-menu-active h4').after('<span class="close"></span>');
+        $('.btn-group.filter-list .dropdown-toggle').on('click',function(){
+          $('.dropdown_bg').show();
+          $('.filter-list .dropdown-toggle').removeClass('active');
+          $('.dropdown-menu-active').hide();
+          $(this).addClass('active').siblings('.dropdown-menu-active').show();
+        });
+        $('.dropdown-menu-active .close,.dropdown_bg').click(function(){
+          $('.dropdown-menu-active').fadeOut(250);
+          $('.dropdown-toggle').removeClass('active');
+          $('.dropdown_bg').hide();
+        });
+    
+      });
+    }
+    
+    // add language auto check event to now have element
+    $('.filename').each(function(){
+      auto_check_language($(this));
+    });
+    
+    // add language self check event to now have element
+    $('.language_set .filter-ul').each(function(){
+      self_check_language($(this));
+    });
+    
+    // self check language evnet method
+    function self_check_language(language_link){
+      $(language_link).find('li').click(function(){
+        var _languageName = $(this).text();
+        var _id = $(this).attr('id');
+        $(this).parents('.codeeditor').find('.language_txt').text("语言："+_languageName);
+        $(this).parents('.codeeditor').find('.language_set input').val(_id);
+        var _box_num = $(this).parents('.codeeditor').find('.del_editor').attr('box_num');
+        set_ace_language(_box_num, _languageName)
+    
+        var _CompareCount = $(".compare_code_box").find(".codeeditor").length;
+        $('.dropdown-menu-active').fadeOut(250);
+        $('.dropdown-toggle').removeClass('active');
+        $('.dropdown_bg').hide();
+      });
+    }
+    
+    // self auto language evnet method
+    function auto_check_language(filename){
+      var filename = $(filename);
+      filename.keyup(function(){
+        var _keyVal = filename.val();
+        if(_keyVal.indexOf(".")<_keyVal.length-1 && _keyVal.indexOf(".")>0){
+          var url = "/snippets/get_language_by_extname" + ".json";
+           $.get(url, {file_name: _keyVal}, function(data){
+            filename.parents('.codeeditor').find('.language_txt').text("语言："+data.language);
+            filename.parents('.codeeditor').find('.language_set input').val(data.id);
+            box_num = filename.parents('.codeeditor').find('.del_editor').attr('box_num');
+            set_ace_language(box_num, data.language)
+          });
+        }else{
+          filename.parents('.codeeditor').find('.language_txt').text("语言：Text");
+          filename.parents('.codeeditor').find('.language_set input').val("");
+        }
+      });
+    }
+    
+    // add language to ace
+    function set_ace_language(box_num, language){
+      language = language.toLowerCase().trim();
+      //alert(box_num+language);
+      try{  
+        for(i=0; i < editors.length; i++){
+          if(editors[i][0] == 'snippet_files_' + box_num + '_content'){
+            editors[i][1].getSession().setMode('ace/mode/' + language);
+            break;
+          }
+        } 
+      }catch (e){  
+      }   
+    }
+  //]]>
+</script>
+
+
+
+</div><div class="autocomplete-suggestions" style="position: absolute; display: none; width: 0px; top: 290px; left: 164.5px; max-height: 0px; z-index: 9999;"></div>
+<div class="footer">
+<div class="container">
+<ul class="pull-left">
+<li>
+<a href="/CSDN_Code/code_support/issues">反馈</a>
+</li>
+<li>
+<a href="/help">帮助</a>
+</li>
+</ul>
+<div class="pull-right">Copyright © 2015, CSDN.NET, All Rights Reserved</div>
+</div>
+</div>
+<div id="note1" class="csdn_note" style="display:none; position:absolute; z-index:9999; width:440px">  <span class="notice_top_arrow"><span class="inner"></span></span>  <div class="box"></div></div><div class="csdn_notice_tip" style="display: none; position: absolute; z-index: 9990; width: 170px; left: -72px; top: 22px;">  <iframe src="about:blank" frameborder="0" scrolling="no" style="z-index:-1;position:absolute;top:0;left:0;width:100%;height:100%;background:transparent"></iframe>  <div class="tip_text">您有<strong>0</strong>条新通知</div>  <a href="javascript:void 0" class="close2"></a></div><script btnid="header_notice_num" count="5" id="noticeScript" src="//csdnimg.cn/rabbit/notev2/js/notify.js?4795362" subcount="5" type="text/javascript" wrapid="note1"></script><input type="hidden" id="aa_g_data_ids">
+<script btnid="header_notice_num" count="5" id="csdn-toolbar-id" src="//csdnimg.cn/public/common/toolbar/js/toolbar.js" subcount="5" type="text/javascript" wrapid="note1"></script>
+
+
+
+
+</body></html>
