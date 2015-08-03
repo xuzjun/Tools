@@ -127,8 +127,10 @@ int add_client(fd_set *wset, fd_set *rset, int *maxfd, int *csocket)
 				*maxfd = client_socket;
 
 			*csocket = client_socket;
+			break;
 		default:
 			close(client_socket);
+			break;
 		}
 	} else {
 		client_status = 1;
